@@ -32,7 +32,7 @@ const CookesShow = (props) => {
                         <button className='px-6 py-1 transition duration-300 border-2 border-purple-800 rounded-md bg-purple-700 text-white hover:bg-pink-600 hover:transition-all'>دستور پخت و نکات</button>
                     </Link>
                         <button onClick={() => dispatch({type: "like", payload: {id}})} className='text-3xl'>{likes.likeItem.some(item => item.id === id) ? 
-                            <span className='text-pink-600'><FontAwesomeIcon icon={faHeartCircleMinus} /></span> : 
+                            <span className='text-purple-600'><FontAwesomeIcon icon={faHeartCircleMinus} /></span> : 
                             <span className='text-pink-600'><FontAwesomeIcon icon={faHeartCirclePlus} /></span>}
                         </button>
                 </div>

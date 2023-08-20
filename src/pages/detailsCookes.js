@@ -41,7 +41,7 @@ const DetailsCookes = () => {
                     <h1 className='text-xl text-pink-600'>نام : <span className='font-bold text-purple-700'>{title}</span></h1>
                     <span>
                     <button onClick={() => dispatch({type: "like", payload: {id}})} className='text-3xl'>{likes.likeItem.some(item => item.id === id) ? 
-                        <span className='text-pink-600'><FontAwesomeIcon icon={faHeartCircleMinus} /></span> : 
+                        <span className='text-purple-600'><FontAwesomeIcon icon={faHeartCircleMinus} /></span> : 
                         <span className='text-pink-600'><FontAwesomeIcon icon={faHeartCirclePlus} /></span>}
                     </button>
                     </span>
@@ -65,8 +65,8 @@ const DetailsCookes = () => {
                         <p className='text-lg text-pink-600'>زمان: <span></span>{showType(time)}</p>
                     </div>
                     <div className='flex flex-col md:flex-row justify-around items-center'>
-                        <button className='mr-12 sm:mr-0 w-52 py-1 my-6 transition duration-300 border-2 border-purple-800 rounded-md bg-purple-700 text-white hover:bg-pink-600 hover:transition-all' onClick={() => navigate("/cookes")}>بازگشت به لسیت غذاها</button>
-                        <a href="https://www.instagram.com/parsa_mahsa_/" target="_blank" rel="noreferrer"><button className='mr-12 sm:mr-0 w-52 py-1 my-6 transition duration-300 border-2 border-purple-800 rounded-md bg-purple-700 text-white hover:bg-pink-600 hover:transition-all' >آموزش کامل همراه با فیلم</button></a>
+                        <button className='sm:mr-0 w-52 py-1 my-6 transition duration-300 border-2 border-purple-800 rounded-md bg-purple-700 text-white hover:bg-pink-600 hover:transition-all' onClick={() => navigate("/cookes")}>بازگشت به لسیت غذاها</button>
+                        <a href="https://www.instagram.com/parsa_mahsa_/" target="_blank" rel="noreferrer"><button className='sm:mr-0 w-52 py-1 my-6 transition duration-300 border-2 border-purple-800 rounded-md bg-purple-700 text-white hover:bg-pink-600 hover:transition-all' >آموزش کامل همراه با فیلم</button></a>
                     </div>
         </div>
         </>

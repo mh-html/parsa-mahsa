@@ -16,7 +16,7 @@ const LikeItem = () => {
     return (
         <div className='container mx-auto min-h-screen'>
             {
-                likes.likeItem.length === 0 ? <p className='text-2xl text-purple-700 font-bold text-center'>لیست علاقه مندی خالی میباشد</p> :
+                likes.likeItem.length === 0 ? <p className='text-2xl text-purple-700 font-bold text-center mt-10'>لیست علاقه مندی خالی میباشد</p> :
                 <div className="my-10 grid gap-4 px-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-36">
                     {datas.map(data => {
                         if(likes.likeItem?.some(i => i.id === data.id))

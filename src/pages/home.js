@@ -73,7 +73,14 @@ const Home = () => {
             <p className="text-lg md:text-2xl leading-10">
               لازانیای پارسا مهسا  <br />یه لازانیای باحال به همراه سس جیلی و ادویه مخصوص
             </p>
-            <a href={linkParsaMahsa} target="_blank" rel="noreferrer"><button className="mt-20 border-2 rounded-md py-1 px-8 bg-pink-600 border-white text-white mr-4 hover:text-pink-600 hover:bg-white">دستور پخت &larr;</button></a>
+            <a href={linkParsaMahsa} target="_blank" rel="noreferrer">
+              <button className="mt-20 border-2 rounded-md py-1 px-8 bg-pink-600 border-white text-white mr-4 hover:text-pink-600 hover:bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 inline-block">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+                </svg>
+                دستور پخت
+                </button>
+              </a>
         </div>
         </div>
       </section>
